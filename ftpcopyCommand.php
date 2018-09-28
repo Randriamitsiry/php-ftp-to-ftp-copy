@@ -95,5 +95,6 @@ class HebergementMigrateCommand extends ContainerAwareCommand
             }
         }
         ftp_close($source_id);
+        ftp_close($destination_id);
     }
 }
